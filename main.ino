@@ -1,15 +1,3 @@
-#include <checksum.h>
-#include <mavlink.h>
-#include <mavlink_helpers.h>
-#include <mavlink_types.h>
-#include <protocol.h>
-unsigned long previousMillisMAVLink = 0;
-unsigned long next_interval_MAVLink = 1000;
-const int num_hbs = 60;
-int num_hbs_pasados = num_hbs;
-#define MAVLINK_MSG_ID_GPS_RAW_INT 24
-#define MAVLINK_MSG_ID_HIL_STATE 90
-
 /*
   ======================================
   -Autonomous Surface Vehicle Prototype-
